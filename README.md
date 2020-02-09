@@ -1,3 +1,3 @@
 # config-repo
 
-spring config server
+spring config repo
