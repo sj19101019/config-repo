@@ -6,7 +6,4 @@ eureka:
     serviceUrl:
       # 將服務註冊到eureka-server
       defaultZone: http://localhost:8761/eureka/
-  instance:
-    statusPageUrlPath: ${management.context-path}/info
-    healthCheckUrlPath: ${management.context-path}/health
 message: dev mode change
