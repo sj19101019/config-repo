@@ -11,7 +11,7 @@ eureka:
     hostname: localhost
     metadata-map:
       management:
-        context-path: ${management.context-path}
+        context-path: ${management.context-path:${MANAGEMENT_CONTEXTPATH:}}
 # eureka:
 #   client:
 #     serviceUrl:
