@@ -1,14 +1,10 @@
 server:
   port: ${PORT:8761}
-  servletPath: /custom
 eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    enabled: true
-#eureka.client.enabled=false
+  instance:
     hostname: localhost
-# eureka:
-#   client:
-#     serviceUrl:
-#       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
