@@ -8,7 +8,6 @@ eureka:
     statusPageUrlPath: ${management.context-path}/info
     healthCheckUrlPath: ${management.context-path}/health
 #eureka.client.enabled=false
-  instance:
     hostname: localhost
 # eureka:
 #   client:
