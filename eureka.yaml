@@ -5,9 +5,6 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-  instance:
-    statusPageUrlPath: ${server.servletPath}/info
-    healthCheckUrlPath: ${server.servletPath}/health
 #eureka.client.enabled=false
     hostname: localhost
 # eureka:
