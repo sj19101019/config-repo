@@ -9,6 +9,9 @@ eureka:
     healthCheckUrlPath: ${management.context-path}/health
 #eureka.client.enabled=false
     hostname: localhost
+    metadata-map:
+      management:
+        context-path: ${management.context-path}
 # eureka:
 #   client:
 #     serviceUrl:
