@@ -5,13 +5,10 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
   instance:
-    statusPageUrlPath: ${management.context-path}/info
-    healthCheckUrlPath: ${management.context-path}/health
+    statusPageUrlPath: ${server.servletPath}/info
+    healthCheckUrlPath: ${server.servletPath}/health
 #eureka.client.enabled=false
     hostname: localhost
-    metadata-map:
-      management:
-        context-path: ${management.context-path:${MANAGEMENT_CONTEXTPATH:}}
 # eureka:
 #   client:
 #     serviceUrl:
