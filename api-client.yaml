@@ -1,6 +1,8 @@
 server:
   port: ${PORT:8000}
-
+spring:
+  application:
+    name: api-client
 eureka:
   client:
     healthcheck:
@@ -9,6 +11,7 @@ eureka:
       # 將服務註冊到eureka-server
       defaultZone: http://localhost:8761/eureka/
   instance:
+    hostname: localhost
     statusPageUrlPath: ${management.server.servlet.context-path}/info
     healthCheckUrlPath: ${management.server.servlet.context-path}/health
   #   metadata-map:
