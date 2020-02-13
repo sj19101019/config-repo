@@ -1,8 +1,5 @@
 server:
   port: ${PORT:8000}
-spring:
-  application:
-    name: api-client
 eureka:
   client:
     healthcheck:
