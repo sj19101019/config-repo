@@ -10,19 +10,21 @@ eureka:
     serviceUrl:
       # 將服務註冊到eureka-server
       defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-    prefer-ip-address: false
-    leaseRenewalIntervalInSeconds: 10
-    statusPageUrlPath: ${management.server.servlet.context-path}/info
-    healthCheckUrlPath: ${management.server.servlet.context-path}/health
-    metadata-map:
-      management:
-        context-path: ${management.server.servlet.context-path}
-        port: ${management.server.port}
-management:
-  server:
-    port: ${PORT:8000}
-    servlet:
-      context-path: /admin
+  # instance:
+  #   hostname: localhost
+  #   prefer-ip-address: false
+  #   leaseRenewalIntervalInSeconds: 10
+    # eureaka server 介面訪問端點
+    # statusPageUrlPath: ${management.server.servlet.context-path}/info
+    # 健康檢查端點
+    # healthCheckUrlPath: ${management.server.servlet.context-path}/health
+    # metadata-map:
+    #   management:
+    #     context-path: ${management.server.servlet.context-path}
+    #     port: ${management.server.port}
+# management:
+#   server:
+#     port: ${PORT:8000}
+#     servlet:
+#       context-path: /admin
 message: dev mode change
