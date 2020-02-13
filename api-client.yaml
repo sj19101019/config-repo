@@ -13,14 +13,14 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: false
-    statusPageUrlPath: /info
-    healthCheckUrlPath: /health
+    statusPageUrlPath: ${management.server.servlet.context-path}/info
+    healthCheckUrlPath: ${management.server.servlet.context-path}/health
   #   metadata-map:
   #     management:
   #       context-path: ${management.server.servlet.context-path}
 management:
   server:
-    port: 
+    port: ${PORT:8000}
     servlet:
       context-path: /custom
 message: dev mode change
