@@ -22,9 +22,5 @@ management:
   server:
     port: ${PORT:8000}
     servlet:
-      context-path: /custom
-  endpoints:
-    jmx:
-      exposure:
-        include: *
+      context-path: /admin
 message: dev mode change
