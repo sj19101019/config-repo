@@ -24,4 +24,10 @@ eureka:
 #     port: ${PORT:8000}
 #     servlet:
 #       context-path: /admin
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      serviceId: api-client
 message: dev mode change
