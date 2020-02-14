@@ -13,4 +13,4 @@ spring:
       discovery:
         enabled: true
       serviceId: user-service
-foo: foo version 4
+foo: foo version 5
