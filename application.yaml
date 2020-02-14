@@ -9,6 +9,16 @@ spring:
     log:
       json:
         enabled: true
+  cloud:
+    bus:
+        enabled: true
+        trace:
+          enabled: true
+    rabbitmq:
+      host: localhost
+      port: 15672
+      username: guest
+      password: guest
 logging:
   pattern:
     console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wex"
